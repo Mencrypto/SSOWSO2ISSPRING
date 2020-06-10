@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User</title>
+</head>
+<body>
+<table border="1">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td th:text="${user.id}"></td>
+		<td><a href="/saml/logout/"><button >Logout</button></a></td>
+	</tr>	
+	</tbody>
+</table>
+</body>
+</html>

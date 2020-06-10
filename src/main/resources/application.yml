@@ -1,0 +1,10 @@
+saml2:
+  metadata-path: classpath:static/saml2_metadata.xml
+  sp:
+    protocol: http
+    host: localhost:8080
+    path: /
+    key-store:
+      file: classpath:static/keystore.jks
+      alias: saml2cert
+      password: secret
